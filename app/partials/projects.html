@@ -1,0 +1,27 @@
+<div ng-controller="projectsCtrl">
+	<div class="container">
+		<style type="text/css">
+			.thumbnail {min-height:375px; height:375px;}
+		</style>
+		<div class="row">
+			<div class="col-sm-6 col-md-4" ng-repeat="project in projects">
+			 	<div class="thumbnail">
+			 		<center>
+			 			<div ng-show="project.img != null"><img class="img-rounded" ng-src="{{project.img}}" width="99%"/></div>
+						<div ng-show="project.img == null"><img class="img-rounded" src="http://lorempixel.com/400/200/technics" width="99%"/></div>
+					</center>
+					<div class="caption">
+						<h3>{{project.name}}</h3>
+						<p>{{project.description}}</p>
+						<p>{{project.role}}</p>
+						<p>
+							<span ng-show="project.github != null"><img src="img\Octocat.png" height="35"/></span>
+							<span ng-show="project.url != null"><a ng-href="{{project.url}}" class="btn btn-primary" role="button">URL</a></span>
+						</p>
+						
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
