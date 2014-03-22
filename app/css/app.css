@@ -28,3 +28,14 @@
   content: "";
   padding: 0;
 }
+
+.thumbnail {min-height:375px; height:375px;}  
+.thumbnail center img {min-height: 165px;}
+.no-img span{position: absolute; left: 30px; top: 15px;}
+.links span a img{height:35px; float: left;}
+
+a img {margin: 15px; margin-top: 0px;}
+.glyphicon {margin: 15px; margin-top: -25px; font-size: 60px; line-height: 3;}
+.tab {margin-left: 30px;}
+
+
